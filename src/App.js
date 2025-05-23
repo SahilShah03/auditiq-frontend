@@ -140,7 +140,7 @@ function App() {
           formData.append('logo', logoFile);
         }
 
-        const response = await axios.post('http://localhost:8000/generate-report', formData, {
+        const response = await axios.post('http://127.0.0.1:8000/generate-report', formData, {
           headers: {
             'Content-Type': 'multipart/form-data',
           },
